@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+</head>
+
+<body>
+    <h1 id="title">Welcome to our Survey Page</h1>
+    <p id="description">Help us to make our products better for you</p>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">
+            Name:<input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+        </label>
+        <label for="email" id="email-label">
+            E-Mail:<input type="email" id="email" name="email" placeholder="Enter Your E-Mail" required>
+        </label>
+        <label for="number" id="number-label">
+            Age:<input type="number" id="number" name="age" max="32" min="18" placeholder="Enter Your Age">
+        </label>
+        <label for="dropdown">What to Change?</label>
+        <select name="gender" id="dropdown">
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="gender">Gender</label>
+        <label for="gender">
+            <input type="radio" id="gender" name="gender" value="male">
+            Male
+        </label>
+        <label for="gender">
+            <input type="radio" id="gender" name="gender" value="female">
+            Female
+        </label>
+        <label for="gender">
+            <input type="radio" id="gender" name="gender" value="Other">
+            Other
+        </label>
+        <label for="contact-medium">How Can We Reach You?</label>
+        <label for="contact-medium">
+            <input type="checkbox" id="contact-medium" name="contact-medium" value="mailBox">
+            MailBox
+        </label>
+        <label for="contact-medium">
+            <input type="checkbox" id="contact-medium" name="contact-medium" value="phone">
+            Phone
+        </label>
+        <label for="contact-medium">
+            <input type="checkbox" id="contact-medium" name="contact-medium" value="email">
+            E-Mail
+        </label>
+        <label for="additional-comments">Additional Comments:</label>
+        <textarea name="additional-comments" id="additional-comments" cols="20" rows="5"></textarea>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
