@@ -1,0 +1,59 @@
+/* Typography */
+
+body {
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 1.35rem;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+h1, p {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    text-align: center;
+}
+
+
+header {
+    margin-bottom: 1.5rem;
+}
+
+/* Layout */
+
+form {
+    padding: 5%;
+}
+
+input, label, select, button, textarea {
+    display: block;
+}
+
+.not-block {
+    display: inline;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+select {
+    width: 100.75%;
+}
+
+.radio {
+    display: inline;
+    width: 5%;
+}
+
+.checkbox {
+    display: inline;
+    width: 5%;
+}
+
+button {
+    margin: 0 auto;
+}
+
