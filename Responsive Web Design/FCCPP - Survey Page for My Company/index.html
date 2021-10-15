@@ -31,29 +31,40 @@
                 <option value="preferNo">Prefer not to say</option>
                 <option value="other">Other</option>
             </select>
+
             <label for="radio">Would you recommend it to a friend?</label>
-            <label>
-                <input name="user-recommend" value="definitely" type="radio" checked="" class="not-block radio">Definitely
-            </label>
-            <label>
-                <input name="user-recommend" value="maybe" type="radio" class="not-block radio">Maybe
-            </label>
-            <label>
-                <input name="user-recommend" value="not-sure" type="radio" class="not-block radio">Not Sure
-            </label>
+            <div class="radio-container"><label>
+                    <input name="user-recommend" value="definitely" type="radio" checked=""
+                        class="not-block radio">Definitely
+                </label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="not-block radio">Maybe
+                </label>
+                <label>
+                    <input name="user-recommend" value="not-sure" type="radio" class="not-block radio">Not Sure
+                </label>
+            </div>
 
             <label for="checkbox">
                 What would you like to see improved? (Check all that apply)
             </label>
-            <label><input name="prefer" value="front-end-projects" type="checkbox" class="not-block checkbox">Front-end
-                Projects</label>
-            <label>
-                <input name="prefer" value="back-end-projects" type="checkbox" class="not-block checkbox">Back-end
-                Projects</label>
-            <label><input name="prefer" value="additional-courses" type="checkbox" class="not-block checkbox">Additional
-                Courses</label>
+            <div class="checkbox-container">
+                <label>
+                    <input name="prefer" value="front-end-projects" type="checkbox" class="not-block checkbox">
+                    Front-end Projects
+                </label>
+                <label>
+                    <input name="prefer" value="back-end-projects" type="checkbox" class="not-block checkbox">
+                    Back-end Projects
+                </label>
+                <label>
+                    <input name="prefer" value="additional-courses" type="checkbox" class="not-block checkbox">
+                    Additional Courses
+                </label>
+            </div>
             <label for="comments">Any Comments or Suggestions?</label>
-            <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+
+            <textarea id="comments" name="comment" placeholder="Enter your comment here..." rows="10"></textarea>
             <button type="submit" id="submit" class="submit-button">
                 Submit
             </button>

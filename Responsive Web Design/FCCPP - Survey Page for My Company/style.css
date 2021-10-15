@@ -1,6 +1,7 @@
 /* Typography */
 
 body {
+    margin: 0;
     font-family: cursive;
     font-weight: 500;
     font-size: 1.35rem;
@@ -18,13 +19,22 @@ h1, p {
 
 
 header {
-    margin-bottom: 1.5rem;
+    padding: 1.5rem 0;
 }
 
 /* Layout */
 
+.container {
+    width: 90%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
 form {
     padding: 5%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+
 }
 
 input, label, select, button, textarea {
@@ -35,12 +45,19 @@ input, label, select, button, textarea {
     display: inline;
 }
 
-input, textarea {
+input, select, textarea {
     width: 100%;
+    padding: 10px 5px;
 }
 
-select {
-    width: 100.75%;
+#name, #number, #email, #comments {
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin: 0.5em 0 2em 0;
+}
+
+#dropdown, .radio-container, .checkbox-container {
+    margin: 0.5em 0 2em 0;
 }
 
 .radio {
@@ -55,5 +72,7 @@ select {
 
 button {
     margin: 0 auto;
+    font-family: cursive;
+    padding: 5px;
 }
 
