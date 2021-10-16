@@ -1,0 +1,110 @@
+/* Typography */
+body {
+    background-color: #ffffff;
+    font-family: Cursive, Arial, sans-serif;
+    /* margin: 0; */
+}
+
+/* ====main==== */
+header {
+    font-size: 1.8rem;
+    background-color: whitesmoke;
+}
+
+code {
+    text-align: left;
+    white-space: pre-line;
+    line-height: 2;
+    background-color: #f7f7f7;
+    
+}
+
+/* ====nav==== */
+nav {
+    text-align: center;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+}
+
+/* Layout */
+
+/* ====main==== */
+main {
+    margin-left: 300px;
+    padding: 20px;
+}
+
+main header {
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+code {
+    margin: 15px 0;
+    padding: 10px 25px;
+    border-radius: 10px;
+    display: block;
+}
+
+/* ====nav==== */
+nav {
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    top: 20px;
+}
+
+nav header {
+    background-color: whitesmoke;
+    padding: 7px 0;
+    border-radius: 10px;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav a {
+    border: 2px solid black;
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background-color: indianred;
+}
+
+nav a:active {
+    background-color: green;
+}
+
+@media (max-width: 715px){
+    /* nav */
+    nav {
+        position: relative;
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    nav ul {
+        width: 100%;
+        max-width: 375px;
+        margin: 15px auto;
+    }
+
+    /* main */
+    main {
+        margin: 0 auto;
+    }
+}
