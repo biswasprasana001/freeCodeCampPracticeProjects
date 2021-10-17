@@ -1,12 +1,6 @@
 body {
     margin: 0;
-}
-
-body {
     font-family: 'Cursive', sans-serif;
-    /* font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.4; */
 }
 
 /* Navigation */
@@ -15,7 +9,6 @@ nav {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.4;
-    /* border: 2px solid red; */
     display: flex;
     justify-content: flex-end;
     background-color: #be3144;
@@ -32,7 +25,6 @@ nav {
 
 
 nav ul {
-    /* border: 2px solid black; */
     padding: 0;
     display: flex;
     margin: 0 1.5em 0 0;
@@ -45,7 +37,6 @@ nav ul {
 }
 
 nav li {
-    /* border: 2px dashed blueviolet; */
     list-style: none;
 }
 
@@ -74,22 +65,18 @@ nav a:active {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    /* width: 100%; */
     height: 100vh;
     background-color: #000;
     color: white;
-    /* background-image: linear-gradient(31deg, #3a3d40 0%, #181719 50%); */
 }
 
 h1, h2 {
     font-family: Cursive;
     font-weight: 400;
-    /* text-align: center; */
 }
 
 h1 {
     font-size: 5rem;
-    /* border: 2px solid aqua; */
     margin: 0;
     margin-bottom: 10px;
     margin-left: 50px;
@@ -98,9 +85,6 @@ h1 {
 .welcome-section p {
     font-family: cursive;
     font-size: 3rem;
-    /* font-weight: 200; */
-    /* font-style: italic; */
-    /* border: 2px solid azure; */
     color: #be3144;
     margin: 0;
     margin-top: 10px;
@@ -125,3 +109,74 @@ h1 {
 
 }
 
+/* Project Section */
+
+.projects-section {
+    background-color: #45567d;
+    padding: 50px 0;
+}
+
+.projects-section-header {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f0f0f0;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.projects-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-tile {
+    display: block;
+    text-decoration: none;
+
+}
+
+.project-link {
+    width: 40%;
+}
+
+.image-1 {
+    display: block;
+    width: 100%;
+}
+
+.image-2 {
+    display: block;
+    width: 100%;
+}
+
+.project-title {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 5px 5px ;
+    font-family: cursive;
+    color: white;
+    background-color: #303841;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 750px) {
+    .projects-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-link{
+        width: 90%;
+    }
+
+    .margin-bottom {
+        margin-bottom: 25px;
+    }
+    
+    .margin-top {
+        margin-top: 25px;
+    }
+}
